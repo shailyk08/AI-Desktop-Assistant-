@@ -7,20 +7,24 @@ Details : This is an Artificial Assistant for Voice Commands.
 """
 
 import pyttsx3
+# pyttsx3- its a text-to-speech library
 import speech_recognition as sr
 import datetime
 import wikipedia
 import webbrowser
 import os
+# provides the facility to establish the internet between the user and the operating system
 import smtplib
+# smtplib- it is a protocol that allows us to send email
 import random
 import time
 import openai
 import platform
+# provides function that access information of the underlying platfrom
 import socket
+# socket - its an endpoint of a two way communication link betwween two programs running on the network
 
 engine = pyttsx3.init('sapi5')
-# pyttsx3- its a text-to-speech library
 # sapi5 -it helps in recognition of voice
 
 voices = engine.getProperty('voices')
@@ -80,7 +84,6 @@ def takeCommand():
 
 def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
-    # smtplib- it is a protocol that allows us to send email
     server.ehlo()
     server.starttls()
     server.login('youremail@gmail.com', 'Your-password-here')
