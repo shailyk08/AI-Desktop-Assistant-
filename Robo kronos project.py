@@ -4,6 +4,7 @@ Author : Shaily Kesharwani
 Date : 18/02/2023
 Language : Python 3.10.6
 Details : This is an Artificial Assistant for Voice Commands.
+Version : 1.0.3
 """
 
 import pyttsx3
